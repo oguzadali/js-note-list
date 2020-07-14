@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin-top: 20px;">
+        <div class="card row">
+            <div class="card-header">Notes</div>
+            <div class="card-body">
+                <form id="note-form" name="form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6" id="areas">
+                            <input class="form-control" value="-" type="text" name="note" id="note" placeholder="Title">
+                            <textarea class="form-control" name="textarea" id="textarea" rows="8"
+                                style="margin-top: 20px;" placeholder="Content"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Save</button>
+                </form>
+                <hr>
+            </div>
+
+            <div class="card-body">
+                <hr>
+
+                <h5 class="card-title" id="tasks-title">Search Notes</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="filter" id="filter" placeholder="Arayın"
+                            value="-">
+                    </div>
+                </div>
+                <hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">İd</th>
+                            <th scope="col">Header</th>
+                            <th scope="col">Content</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="notes">
+
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+                <hr>
+                <a id="clear-all-notes" href="#" class="btn btn-dark">Clear All</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="ui.js"></script>
+    <script src="notes.js"></script>
+    <script src="storage.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

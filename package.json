@@ -1,0 +1,22 @@
+{
+  "name": "note-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "todolist",
+    "notebook",
+    "bootstrap"
+  ],
+  "author": "oguzadali",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oguzadali/js-note-list.git"
+  }
+}
